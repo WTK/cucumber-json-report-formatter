@@ -217,6 +217,10 @@ export class Formatter {
             }
         })
 
+       if (!status) {
+            status = "passed"
+       }
+
         return {
             status: status.toLowerCase(),
             duration: duration,
